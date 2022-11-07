@@ -1,0 +1,76 @@
+.root {
+  position: absolute;
+  top: calc(var(--nav-size) - 2px);
+  right: 0;
+  width: 30rem;
+  background-color: var(--color-bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  overflow: hidden;
+}
+
+.item {
+  height: 5rem;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  transition: background-color var(--animation-speed);
+
+  &:hover {
+    background-color: #525357;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.icon_right {
+  margin-left: auto;
+  fill: currentColor;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--animation-speed) ease;
+}
+
+.menu-primary-exit {
+  position: absolute;
+}
+
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--animation-speed) ease;
+}
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--animation-speed) ease;
+}
+
+.menu-secondary-exit {
+  position: absolute;
+}
+
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--animation-speed) ease;
+}

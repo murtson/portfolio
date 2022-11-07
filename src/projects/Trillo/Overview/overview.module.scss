@@ -1,0 +1,99 @@
+.root {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  border-bottom: var(--line);
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem 3rem;
+}
+
+.stars {
+  margin-right: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.iconStar,
+.iconLocation {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-primary-main);
+}
+
+.location {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.iconLocation {
+  margin-right: 0.5rem;
+}
+
+.rating {
+  background-color: var(--color-primary-main);
+  color: #fff;
+  margin-left: 3rem;
+  padding: 0 2.25rem;
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratingAverage {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: -5px;
+}
+
+.ratingCount {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.button {
+  border: none;
+  color: var(--color-primary-main);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transform: all 0.2s;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

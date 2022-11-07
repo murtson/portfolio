@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  // 62.5% makes 1 rem = 10px. This is because browser default is 16px. 10/16 = 62.5
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Inter';
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
